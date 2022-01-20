@@ -3,16 +3,16 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
-import { ContactComponent } from './contact/contact.component';
-import { NotFoundComponent } from './not-found/not-found.component';
 import { ContactModule } from './modules/general/contact/contact.module';
 import { LoginModule } from './modules/general/login/login.module';
 import { LogoutModule } from './modules/general/logout/logout.module';
-import { AccountComponent } from './account/account.component';
+import { AccountComponent } from './components/account/account.component';
 import { AccountModule } from './modules/general/account/account.module';
+import { ContactComponent } from './components/contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { LoginComponent } from './components/login/login.component';
+import { LogoutComponent } from './components/logout/logout.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
