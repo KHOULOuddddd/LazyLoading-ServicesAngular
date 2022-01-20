@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ServiceWithObservableService } from 'src/app/services/service-with-observable.service';
 
 @Component({
   selector: 'app-account',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./account.component.css']
 })
 export class AccountComponent implements OnInit {
-
-  constructor() { }
+  
+  // injecter le service dans le composant account
+  constructor(private userService : ServiceWithObservableService    ) { }
 
   ngOnInit(): void {
+    // la valeur sera changé de '1' à str='khouloud'
+    this.userService.setSUbject('khouloud'); 
   }
-
+  
 }
